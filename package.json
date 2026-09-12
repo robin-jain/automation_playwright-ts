@@ -1,0 +1,25 @@
+{
+  "name": "orangehrm-playwright-ts",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Enterprise Playwright automation framework for OrangeHRM",
+  "scripts": {
+    "test": "playwright test --headed",
+    "test:smoke": "playwright test --grep @smoke --headed",
+    "test:dev": "cross-env TARGET_ENV=dev playwright test --headed",
+    "test:uat": "cross-env TARGET_ENV=uat playwright test --headed",
+    "test:prod": "cross-env TARGET_ENV=prod playwright test --grep @readonly --headed",
+    "test:ui": "playwright test --ui --headed",
+    "test:report": "playwright show-report",
+    "typecheck": "tsc --noEmit"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.55.0",
+    "@types/node": "^24.0.0",
+    "cross-env": "^7.0.3",
+    "typescript": "^5.9.0"
+  }
+}

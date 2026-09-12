@@ -1,0 +1,13 @@
+{
+  "Test_case_001": {
+    "name": "robin",
+    "lastName": "jain",
+    "usernameEnv": "ORANGEHRM_USERNAME",
+    "passwordEnv": "ORANGEHRM_PASSWORD",
+    "expectedDashboard": "Dashboard"
+  },
+  "Test_case_002": {
+    "name": "robin",
+    "lastName": "jain"
+  }
+}
